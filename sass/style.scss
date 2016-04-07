@@ -1,0 +1,13 @@
+/*
+Theme Name: My Custom Theme
+Author: Nick Gordon
+Description: This is my first custom theme!
+
+*/
+$ff: 'Arial';
+$bg: #f2f2f2;
+
+body{
+  background: $bg;
+  font-family: $ff;
+}
