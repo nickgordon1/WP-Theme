@@ -6,6 +6,16 @@
     <?php wp_head(); ?>
   </head>
   
-  <body>
+  <?php
+  
+    if( is_front_page() ):
+      $wp_classes = array( 'wp-class', 'my-class' );
+    else:
+      $wp_classes = array( 'no-wp-class' );
+    endif;
+  
+  ?>
+  
+  <body <?php body_class( $wp_classes ); ?>>
 
       <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
