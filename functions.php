@@ -19,3 +19,6 @@ function wptheme_theme_setup(){
 }
 
 add_action('init', 'wptheme_theme_setup');
+
+add_theme_support('custom-background');
+add_theme_support('custom-header');
